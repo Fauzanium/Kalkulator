@@ -1,0 +1,175 @@
+body {
+    background-color: rgb(37, 37, 37);
+}
+.box {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: row;
+    gap: 5px;
+    
+}   
+
+.box button {
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid rgb(42, 42, 42);
+    width: 5em;
+    height: 2em;
+    /* align-items: center; */
+    text-align: center;
+    align-content: center;
+    margin: 2px;
+    border-radius: 5px;
+    background-color: rgb(54, 54, 54);
+}
+
+.theresult {
+    /* display: flexbox; */
+    /* justify-content: center; */
+    text-align: right;
+    /* align-items: center; */
+    color: rgb(251, 251, 251);
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid rgb(42, 42, 42);
+    width: 15.5em;
+    /* height: 2.5em; */
+    padding-top: 20px;
+    /* align-items: center; */
+    margin: 10px;
+    border-radius: 5px;
+    background-color: rgb(54, 54, 54);
+    font-size: larger;
+}
+
+.tabresult {
+    /* display: flex; */
+    /* justify-content: center; */
+    padding-bottom: 20px;
+}
+
+.calculator {
+    margin-top: 15%;
+    background-color: rgb(37, 37, 37);
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 20em;
+    border-radius: 30px;
+    
+}   
+
+.box button:hover {
+    background-color: rgb(77, 77, 77);
+    cursor: pointer;
+}
+
+#operation {
+    background-color: rgb(85, 115, 148);
+}
+
+#clear {
+    background-color: rgb(196, 112, 57);
+}
+
+.test {
+        animation-name: example;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        /* animation-fill-mode: both; */
+        animation-direction: alternate;
+        animation-timing-function: ease-in-out;
+    background-color: rgb(37, 37, 37);
+    /* animation-delay: s; */
+    /* animation-fill-mode: backwards; */
+}
+
+@keyframes example {
+    0% {background-color: rgb(255, 205, 112);}
+    20% {background-color: rgb(255, 224, 122);}
+    100% {background-color: rgb(250, 193, 255);}
+
+  }
+
+/* .dropdown {
+    animation-name: dropdown
+}
+
+
+@keyframes dropdown {
+    
+    0% {top: 0px;}
+    100% {top: 200px}
+
+
+} */
+
+.transition {
+    animation-name: transition;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+
+@keyframes transition {
+    
+    100% {background-color: rgb(255, 205, 112);}
+
+
+}
+
+.wrap {
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes appear {
+    0% {
+        /* transform: translateY(-100px); */
+        /* opacity: 0; */
+    }
+    25% {
+        opacity: 1;
+    }
+    100% {
+        /* transform: translateY(0); */
+        opacity: 1;
+    }
+    
+}
+
+.numbers {
+    /* font-size: 48px; */
+    /* font-weight: bold; */
+    text-align: right;
+}
+
+.number {
+    /* display: flexbox; */
+    /* justify-content: center; */
+    text-align: right;
+    /* align-items: center; */
+    color: rgb(251, 251, 251);
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* align-items: center; */
+    margin: -2.5px;
+    padding: 0px;
+    /* font-size: larger;  */
+    display: inline-block;
+    /* margin: 0 5px; add some margin to space them out */
+    opacity: 0;
+    /* width: fit-content; */
+    /* border: 1px solid red; */
+    animation: appear 2s forwards;
+
+    /* animation: name duration  delay iteration-count direction fill-mode; */
+    /* animation-timing-function: ease; */
+}
+
+
+
+.text {
+    margin: 0 0.1px;
+}
